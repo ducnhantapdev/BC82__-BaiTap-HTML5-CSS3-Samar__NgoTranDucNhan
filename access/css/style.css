@@ -4,9 +4,6 @@ body {
   line-height: 1.6;
 }
 
-html {
-}
-
 .flex__div {
   display: flex;
   justify-content: center;
@@ -713,6 +710,7 @@ html {
   border-radius: 10px;
   transition: all 0.75s;
   text-align: center;
+  cursor: pointer;
 }
 
 .img__item .over__play .over__text {
@@ -1058,6 +1056,10 @@ footer .container {
   background-color: rgba(255, 255, 255, 0.1);
   transition: all 0.5s;
   margin: 10px 0;
+}
+
+.content__right a:hover {
+  background-color: #f66994;
 }
 
 .content__left {
