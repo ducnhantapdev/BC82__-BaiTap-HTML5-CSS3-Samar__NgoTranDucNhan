@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Samar - HTML Template</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://cybersamar-v2.vercel.app/img/favicon.png" type="image/x-icon">
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- line awsome -->
@@ -21,6 +24,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Portfolio effect -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    
 </head>
 <body>
     <header id="header">
@@ -230,7 +239,7 @@
                         <img src="./access/img/pic1_2.jpg" alt="#">
                         <div class="over__play">
                             <div class="over__icon">
-                                <i class="la la-plus"></i>
+                                <a data-src="./access/img/pic1_2.jpg" data-fancybox="gallery" data-caption="Design 1" data-thumb="./access/img/pic1_2.jpg" ><i class="la la-plus"></i></a>
                             </div>
                             <div class="over__text">
                                 <p>Software Landing</p>
@@ -242,7 +251,7 @@
                         <img src="./access/img/pic2_1.jpg" alt="#">
                         <div class="over__play">
                             <div class="over__icon">
-                                <i class="la la-plus"></i>
+                                 <a data-thumb="./access/img/pic2_1.jpg" data-src="./access/img/pic2_1.jpg" data-fancybox="gallery" data-caption="Design 2"><i class="la la-plus"></i></a>
                             </div>
                             <div class="over__text">
                                 <p>Software Landing</p>
@@ -254,7 +263,7 @@
                         <img src="./access/img/pic3_1.jpg" alt="#">
                         <div class="over__play">
                             <div class="over__icon">
-                                <i class="la la-plus"></i>
+                                <a  data-thumb="./access/img/pic3_1.jpg" data-src="./access/img/pic3_1.jpg" data-fancybox="gallery" data-caption="Design 3"><i class="la la-plus"></i></a>
                             </div>
                             <div class="over__text">
                                 <p>Software Landing</p>
@@ -266,7 +275,7 @@
                         <img src="./access/img/pic4.jpg" alt="#">
                         <div class="over__play">
                             <div class="over__icon">
-                                <i class="la la-plus"></i>
+                                 <a data-thumb="./access/img/pic4.jpg" data-src="./access/img/pic4.jpg" data-fancybox="gallery" data-caption="Design 4"><i class="la la-plus"></i></a>
                             </div>
                             <div class="over__text">
                                 <p>Software Landing</p>
@@ -278,7 +287,7 @@
                         <img src="./access/img/pic5.jpg" alt="#">
                         <div class="over__play">
                             <div class="over__icon">
-                                <i class="la la-plus"></i>
+                                 <a data-thumb="./access/img/pic5.jpg" data-src="./access/img/pic5.jpg" data-fancybox="gallery" data-caption="Design 5"><i class="la la-plus"></i></a>
                             </div>
                             <div class="over__text">
                                 <p>Software Landing</p>
@@ -290,7 +299,7 @@
                         <img src="./access/img/pic6.jpg" alt="#">
                         <div class="over__play">
                             <div class="over__icon">
-                                <i class="la la-plus"></i>
+                                <a data-thumb="./access/img/pic6.jpg" data-src="./access/img/pic6.jpg" data-fancybox="gallery" data-caption="Design 6"><i class="la la-plus"></i></a>
                             </div>
                             <div class="over__text">
                                 <p>Software Landing</p>
@@ -626,5 +635,13 @@
      <script>document.getElementsByTagName("html")[0].className += " js";</script>
     <script src="./access/js/mainBackToTop.js"></script>
     <script src="./access/js/util.js"></script>
+
+    <!-- Portfolio -->
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });    
+    </script>
 </body> 
 </html>
