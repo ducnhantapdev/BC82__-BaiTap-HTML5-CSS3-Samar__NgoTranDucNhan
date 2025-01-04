@@ -585,6 +585,7 @@ body {
 
 /***************** Porfolio *******************/
 #portfolio {
+  position: relative;
   background-image: url("/access/img/bg17.png");
   background-repeat: no-repeat;
   background-position: center top;
@@ -728,6 +729,7 @@ body {
   background-position: top center;
   background-size: cover;
   padding-bottom: 50px;
+  z-index: 1;
 }
 
 #our-blog .container {
