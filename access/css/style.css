@@ -1,3 +1,5 @@
+@import url("../css/responsive/header.css");
+
 body {
   color: #636363;
   font-family: "Roboto", sans-serif;
@@ -35,6 +37,10 @@ body {
   display: flex;
   justify-items: center;
   align-items: center;
+}
+
+.nav__bars {
+  display: none;
 }
 
 .header__menu ul {
@@ -238,6 +244,21 @@ body {
   margin: auto;
   text-align: center;
   padding-top: 100px;
+}
+
+.services__content .content__title p {
+  font-weight: 600;
+  font-size: 1.375rem;
+  margin-bottom: 20px;
+  color: #f55f8d;
+}
+
+.services__content .content__title h2 {
+  font-size: 4.375rem;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #262626;
+  margin-bottom: 20px;
 }
 
 .services__content .content__card {
